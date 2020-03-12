@@ -1,0 +1,120 @@
+/* Navigation a gauche de l'ecran*/
+#nav-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  padding-top: 50px;
+  background-color: #1d2126;
+  /* Flex box */
+  display: flex;
+  flex-direction: column;
+  /* Image de fond */
+  /* Conformement au condition d'utilisation de l'image d'écrite sur
+  https://commons.wikimedia.org/w/index.php?title=File:Atom_editor_logo.svg&lang=fr&uselang=fr#Conditions_d%E2%80%99utilisation
+  celle si n'est pas soumit à la protection des droit d'auteur (car dans le domaine public)*/
+  background-image: url(../images/145x52-atom-title.png);
+  background-repeat: no-repeat ;
+  background-position : 50px 35px;
+}
+#nav-left ul {
+  list-style-type: none;
+}
+#nav-left li {
+  margin: 0px;
+  padding: 5px 0px;
+}
+#nav-left a {
+  color: #d19a66;
+}
+#nav-left a:hover {
+  color: #b5b7bc;
+}
+
+#nav-left li ul {
+  padding-left: 20px;
+  list-style-image: url(../images/icons/group.png)
+}
+#nav-left ul ul ul{
+  list-style-image: url(../images/icons/group2.png)
+}
+#nav-left li li {
+  margin:0px;
+  padding: 3px;
+}
+/* On efface les detail des pages lorsque l'on est pas dessus*/
+#nav-left ul ul ul:not(#display) {
+  display: none;
+}
+/* la page courante */
+#nav-left .selected {
+  color: #b5b7bc;
+  pointer-events: none;
+}
+/* Barre de recherche*/
+#nav-left .search {
+  background-color: #21252b;
+  height: 1.5rem;
+  width: 75%;
+  border: 1px solid #282c34;
+  color: #b5b7bc;
+  padding: 5px 5px;
+  margin-top: 70px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+#nav-left .search:focus {
+  margin-right: 0px;
+  border: 1px solid #d19a66;
+
+}
+#nav-left button.submit {
+  width: 30px;
+  height: 30px;
+  color: #b5b7bc;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+#nav-left button.submit:hover {
+  color: #d19a66;
+}
+
+#nav-left button.bottom {
+  margin: auto 5px;
+  font-size: 1.2rem;
+  background-color: #21252b;
+  border: 1px solid #282c34;
+  color: #d19a66;
+}
+#nav-left button.bottom:hover {
+  border: 1px solid #d19a66;
+}
+#nav-left button.bottom:active {
+  border: 1px solid #e06c75;
+  color: #e06c75;
+}
+
+
+
+/* barre de navigation fléché à la fin du document*/
+#nav-bottom {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #282c34;
+}
+
+#nav-bottom a{
+  text-decoration: none;
+  margin: 0px auto ;
+  color: #93b8c9;
+  font-size: 2rem;
+}
+#nav-bottom a:hover{
+  margin: auto;
+  font-size: 2.5rem;
+}
