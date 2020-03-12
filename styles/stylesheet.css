@@ -1,13 +1,6 @@
-html {
+html, body {
   background-color: #1d2126;
   color: #b5b7bc;
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  background-color: #1d2126;
-  height: 100%;
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
