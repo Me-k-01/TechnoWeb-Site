@@ -1,7 +1,7 @@
 
 header {
   background-color: #21252b;
-  padding-left: 250px;
+  padding-left: 20%;
   margin: 0px;
 
 }
@@ -14,8 +14,8 @@ header h1 {
 
 header ul{
   display: flex;
+  height: 20%;
   padding: 0px;
-  height: 60px;
   margin: 0px;
 
 }
@@ -23,17 +23,12 @@ header ul{
 header li {
   text-align: center;
   width: 25%;
+  height: 100%;
   list-style-type: none;
 }
-header li:hover {
-  background-color: #93b8c9;
-}
-header li:active {
-  background-color: #b5b7bc;
-}
 
 
-header a {
+header li a {
   color: #b5b7bc;
   height: 100%;
   width: 100%;
@@ -43,10 +38,33 @@ header a {
   line-height: 60px;
   font-size: 1rem;
 }
-header li:hover a {
-  color: #21252b;
+header li:hover a{
+  transition-delay: 0.1s;
+  color: #b5b7bc;
   text-decoration: none;
 }
+header li:active a {
+  color: #d19a66;
+  background-color: #21252b;
+  transition-delay: 0.1s;
+  text-decoration: none;
+}
+header li span {
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: auto;
+  transition: width 1s ease-out 0.1s;
+  background-color: #d19a66;
+}
+header li:hover span {
+  width: 100%;
+  left: 100%;
+  margin-right:
+  transition: 0.1s;
+
+}
+
 
 header .selected {
   background-color: #282c34;
