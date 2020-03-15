@@ -1,8 +1,10 @@
 html, body {
-  background-color: #1d2126;
+  background-color: #21252b;
   color: #b5b7bc;
   margin: 0px;
   padding: 0px;
+  height: 100%;
+  width: : 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,7 +15,7 @@ body::-webkit-scrollbar-track {
   background: #1d2126;
 }
 body::-webkit-scrollbar-thumb {
-  background: #d19a66;
+  background: #323232;
 }
 
 
@@ -28,24 +30,31 @@ a {
 }
 a:hover {
   color: #93b8c9;
-  text-decoration: underline;
 }
 a:active {
   color: #e06c75;
 }
 
-main {
-  padding: 20px;
-  margin-left: 20%;
-  background-color: #282c34;
+button {
+  cursor: pointer;
 }
 
 .banner {
+  display: flex;
   background-color: #323232;
   width: 100%;
   margin: auto;
   padding: 0px;
+  overflow: hidden;
 }
-.banner img {
-  height: 200px;
+main {
+  padding: 20px;
+  margin: 180px 20% 0 20%;
+  background-color: #282c34;
+}
+
+@media (max-width: 1200px) {
+  main {
+    margin-right: 0;
+  }
 }

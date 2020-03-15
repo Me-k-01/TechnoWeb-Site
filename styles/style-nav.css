@@ -30,7 +30,7 @@
   color: #d19a66;
 }
 #nav-left a:hover {
-  color: #b5b7bc;
+  color: #d1d3d7;
 }
 
 #nav-left li ul {
@@ -44,7 +44,8 @@
   margin:0px;
   padding: 3px;
 }
-/* On efface les detail des pages lorsque l'on est pas dessus*/
+/* On efface les details des pages contenu par l'ul tertiare
+ lorsque l'on n'est pas dessus*/
 #nav-left ul ul ul:not(#display) {
   display: none;
 }
@@ -54,20 +55,25 @@
   pointer-events: none;
 }
 /* Barre de recherche*/
+
+#nav-left form {
+  display: flex;
+  padding: 5px 5px;
+  margin-top: 70px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+
 #nav-left .search {
   background-color: #21252b;
   height: 1.5rem;
   width: 75%;
   border: 1px solid #282c34;
   color: #b5b7bc;
-  padding: 5px 5px;
-  margin-top: 70px;
-  margin-left: 5%;
-  margin-bottom: 20px;
 }
 #nav-left .search:hover {
   border: 1px solid #b5b7bc;
-  transition-delay: 0.1s;
+  transition-delay: 0.07s;
 
 }
 #nav-left .search:focus {
@@ -94,6 +100,7 @@
   color: #d19a66;
 }
 #nav-left button.bottom:hover {
+  transition-delay: 0.07s;
   border: 1px solid #d19a66;
 }
 #nav-left button.bottom:active {
@@ -114,7 +121,6 @@
 }
 
 #nav-bottom a{
-  text-decoration: none;
   margin: 0px auto ;
   color: #93b8c9;
   font-size: 2rem;
@@ -122,4 +128,10 @@
 #nav-bottom a:hover{
   margin: auto;
   font-size: 2.5rem;
+}
+
+@media (max-width: 666px) {
+  #nav-left {
+    background-image: url(../images/icons/atom-icon.png);
+  }
 }

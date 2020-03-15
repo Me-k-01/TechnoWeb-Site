@@ -1,72 +1,79 @@
 
 header {
+  position: absolute;
+  top: 0;
   background-color: #21252b;
-  padding-left: 20%;
-  margin: 0px;
-
+  padding: 0 20%;
+  margin: 0;
+  width: 60%;
+  height: 180px;
+  scroll-behavior: smooth;
+}
+@media (max-width: 1200px) {
+  header {
+    width: 80%;
+  }
 }
 
 header h1 {
-  margin: 0px;
-  padding: 50px 0px 20px 10%;
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+  margin: 1.2rem 0;
+  padding: 17px 40%;
+  background-color: #1d2126;
 }
 
 
 header ul{
   display: flex;
-  height: 20%;
-  padding: 0px;
-  margin: 0px;
-
+  height: 4.5rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 header li {
-  text-align: center;
-  width: 25%;
+  width: 100%;
   height: 100%;
+  line-height: 4.5rem;
   list-style-type: none;
+  border-bottom: 2px solid #1d2126;
 }
 
 
 header li a {
-  color: #b5b7bc;
-  height: 100%;
+  display: block;
+  text-align: center;
   width: 100%;
-  text-decoration: none;
+  height: 100%;
   font-size: 18px;
-  display:inline-block;
-  line-height: 60px;
-  font-size: 1rem;
-}
-header li:hover a{
-  transition-delay: 0.1s;
   color: #b5b7bc;
-  text-decoration: none;
 }
-header li:active a {
+header li a:hover{
+  transition-delay: 0.07s;
+  color: #b5b7bc;
+}
+header li a:active {
   color: #d19a66;
   background-color: #21252b;
-  transition-delay: 0.1s;
-  text-decoration: none;
+  transition-delay: 0.07s;
 }
 header li span {
   display: block;
   width: 0%;
   height: 2px;
   margin: auto;
-  transition: width 1s ease-out 0.1s;
+  transition: width 1s ease-out 0.07s;
   background-color: #d19a66;
 }
 header li:hover span {
   width: 100%;
-  left: 100%;
-  margin-right:
-  transition: 0.1s;
-
 }
 
 
 header .selected {
   background-color: #282c34;
   pointer-events: none;
+
+  border-bottom: none;
 }
