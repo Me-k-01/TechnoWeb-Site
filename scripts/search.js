@@ -24,10 +24,10 @@ function addParentToProtection(li, protectedList) {
 
 function search() {
   /* Fonction pour effectuer une recherche sur la barre de navigation */
-  var nav = document.getElementById("nav-left");
+  const nav = document.getElementById("nav-left");
   var input = nav.getElementsByClassName("search")[0].value;
 
-  var classNames = ["tertiary", "secondary", "primary"];
+  const classNames = ["tertiary", "secondary", "primary"];
   var protectedLis = [];
 
   for (let className of classNames) {

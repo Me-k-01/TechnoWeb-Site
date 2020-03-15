@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="../styles/style-header.css">
     <link rel="stylesheet" href="../styles/style-nav.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://kit.fontawesome.com/da84674338.js" crossorigin="anonymous"></script>
     <script src='../scripts/search.js' ></script>
+    <script src='../scripts/showVisibleSections.js' ></script>
   </head>
-  <body>
+
+  <body onscroll="onScroll()">
     <header>
       <h1>Modele</h1>
       <ul>
@@ -39,7 +40,7 @@
             <li>
               <a class="selected" href="./guide/utilisation.html">Utilisation</a>
               <ul id="display" class="tertiary">
-                <li><a class="selected" href="#fonctionnement">Général</a></li>
+                <li><a href="#general">Général</a></li>
                 <li><a href="#git">Git</a></li>
               </ul>
             </li>
@@ -71,7 +72,9 @@
         <img src="../images/banner/200x300-atom-banner-3.png" alt="">
       </div>
 
-
+      <section id="git">
+        <p>eeeeee</p>
+      </section>
       <h2>Header</h2>
       <p>blablabla</p>
       <p>blablabla</p>
@@ -102,6 +105,9 @@
       <p>blablabla</p>
       <p>blablabla</p>
       <p>blablabla</p>
+      <section id="general">
+        <p>eeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+      </section>
       <p>blablabla</p>
 
       <nav id="nav-bottom">
