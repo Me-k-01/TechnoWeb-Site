@@ -1,11 +1,13 @@
 
 function isVisible(el) {
+  // Test de si un element est visible a l'ecran
   var rect = el.getBoundingClientRect();
   // On test si les coords du rect sont dans la fenetre, d'apres l'axe x uniquement.
   return ( (rect.top >= 0) && (rect.bottom <= window.innerHeight) );
 }
 
 function getLinkFromAnchor(anchor, links) {
+  // Recuperer un lien depuis l'id auquelle il refere
   for (let a of links) {
     let i = a.href.indexOf("#");
     let href = a.href.substring(i+1);
@@ -17,6 +19,7 @@ function getLinkFromAnchor(anchor, links) {
 }
 
 function removeClassFrom(elements, className) {
+  // Retirer les class d'une liste d'element
   for (let el of elements) {
     if ( el.className == className) {
       el.classList.remove(className);
