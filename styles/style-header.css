@@ -5,13 +5,15 @@ header {
   background-color: #21252b;
   padding: 0 20%;
   margin: 0;
-  width: 60%;
   height: 180px;
+  width: 60%;
+  transition: width 1s ease-in-out 0.07s;
   scroll-behavior: smooth;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   header {
     width: 80%;
+    transition: width 1s ease-in-out 0.07s;
   }
 }
 
