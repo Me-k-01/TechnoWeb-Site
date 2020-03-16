@@ -14,7 +14,7 @@
 
   <body onscroll="onScroll()">
     <header>
-      <h1>Modele</h1>
+      <h1>Modèle</h1>
       <ul>
         <li class="selected"><a href="../index.html">Exemple</a><span></span></li>
         <li><a href="../index.html">Exemple</a><span></span></li>
@@ -32,7 +32,12 @@
       </form>
 
       <ul class="primary">
-        <li><a href="../index.html">Présentation</a></li>
+        <li><a href="../index.html">Accueil</a>
+          <ul class="tertiary">
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#problem">Problématique</a></li>
+          </ul>
+        </li>
         <li><a class="selected" href="./guide/instalation.html">Guide</a>
           <ul class="secondary">
             <li><a href="./guide/instalation.html">Instalation</a>
@@ -51,17 +56,21 @@
                 <li><a href="#recommendation">Recommendation</a></li>
               </ul>
             </li>
-            <li><a href="./guide/theme.html">Les Themes</a></li>
+            <li><a href="./guide/themes.html">Les Thèmes</a></li>
           </ul>
 
         </li>
         <li><a href="./pourAllerPlusLoin.html">Pour aller plus loin</a></li>
-        <li><a href="./makingOf.html">Making Of</a></li>
+        <li><a href="./makingOf.html">Making Of</a>
+          <ul class="secondary">
+            <li><a href="#problem">Problématique</a></li>
+            <li><a href="#analytics">Google Analytics</a></li>
+          </ul>
+        </li>
       </ul>
       <form class="bottom">
         <button onClick="parent.location='mailto:auberval.florian01@gmail.com'">Contact</button>
-
-        <a href="https://github.com/Me-k-01/TechnoWeb-Site">Repo</a>
+        <a href="https://github.com/Me-k-01/TechnoWeb-Site">Repository</a>
       </form>
     </nav>
 
@@ -114,8 +123,8 @@
       <p>blablabla</p>
 
       <nav id="nav-bottom">
-        <a href="#"><</a>
-        <a href="#">></a>
+        <a href="#"><i class="fas fa-chevron-left"></i></a>
+        <a href="#"><i class="fas fa-chevron-right"></i></a>
       </nav>
 
     </main>

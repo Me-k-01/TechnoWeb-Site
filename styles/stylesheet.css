@@ -51,6 +51,7 @@ button {
 main {
   padding: 20px;
   margin: 180px 20% 0 20%;
+  min-height: 70vh;
   background-color: #282c34;
   transition: margin-right 1s ease-in-out 0.07s;
 }
@@ -58,6 +59,5 @@ main {
 @media (max-width: 1000px) {
   main {
     margin-right: 0;
-    transition: margin-right 1s ease-in-out 0.07s;
   }
 }

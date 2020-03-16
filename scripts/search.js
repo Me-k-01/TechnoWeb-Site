@@ -31,7 +31,13 @@ function search() {
   var protectedLis = [];
 
   for (let className of classNames) {
-    let lisToCheck = nav.querySelectorAll(`ul.${className} > li`);
+    var lisToCheck;
+    if (className == classNames[0]) {
+      // On test que pour les elements afficher pour le troisieme niveau de liste
+      lisToCheck = nav.querySelectorAll(`#display > li`);
+    } else {
+      lisToCheck = nav.querySelectorAll(`ul.${className} > li`);
+    }
     for (let li of lisToCheck) {
       if (protectedLis.includes(li)) {
         // Si le li est protégé

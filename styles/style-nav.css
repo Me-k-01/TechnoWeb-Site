@@ -17,14 +17,14 @@
   background-repeat: no-repeat ;
   background-position : 50% 35px;
 }
-@media (max-width: 669px) {
+@media (max-width: 750px) {
   #nav-left {
     background-image: url(../images/145x52/atom-icon.png);
   }
+}
+@media (max-width: 1000px) {
   #nav-left form.bottom  {
     flex-direction: column;
-  }
-  #nav-left form.bottom button {
   }
 }
 #nav-left ul {
@@ -60,7 +60,7 @@
 }
 /* On efface les details des pages contenu par l'ul tertiare
  lorsque l'on n'est pas dessus*/
-#nav-left ul ul ul:not(#display) {
+#nav-left ul.tertiary:not(#display) {
   display: none;
 }
 /* la page courante */
@@ -114,14 +114,14 @@
   margin: 0 0 150px 0;
   padding: 5px;
   width: 100%-5px;
-  height: 6rem;
+  height: 4rem;
   align-items: center;
 }
 #nav-left form.bottom button {
   width: 100%;
-  height: 50%;
+  height: 52%;
   font-size: 1.2rem;
-  line-height: 2.9rem;
+  line-height: 2rem;
   background-color: #21252b;
   border: 1px solid #282c34;
   color: #d19a66;
@@ -140,7 +140,7 @@
   width: 100%;
   height: 50%;
   font-size: 1.2rem;
-  line-height: 3.2rem;
+  line-height: 2.2rem;
   text-align: center;
   background-color: #21252b;
   border: 1px solid #282c34;
@@ -158,6 +158,7 @@
 
 /* barre de navigation fléché à la fin du document*/
 #nav-bottom {
+  position: relative;
   display: flex;
   padding: 0px;
   margin: 0px;
@@ -170,6 +171,7 @@
   margin: 0px auto ;
   color: #93b8c9;
   font-size: 2rem;
+  transition: 0.4s 0.07s;
 }
 #nav-bottom a:hover{
   margin: auto;
