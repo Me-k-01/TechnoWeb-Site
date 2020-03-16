@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb {
 
 
 h1 {
-  color: #d19a66;
+  color: #cc8d51;
 }
 
 a {
@@ -50,9 +50,10 @@ button {
 }
 main {
   padding: 20px;
-  margin: 180px 20% 0 20%;
+  margin: 0 20% 0 20%;
   min-height: 70vh;
   background-color: #282c34;
+
   transition: margin-right 1s ease-in-out 0.07s;
 }
 

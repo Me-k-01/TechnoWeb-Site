@@ -14,11 +14,13 @@
 
   <body onscroll="onScroll()">
 
-  <header>
-    <h1>Accueil</h1>
-  </header>
+    <header>
+      <h1>Accueil</h1>
+      <span class="line"></span>
+    </header>
+
     <nav id="nav-left">
-      <form>
+      <form class="top">
         <input class="search" type="text" onkeyup="search()" placeholder="Rechercher une section..">
         <button class="submit" type="button" name="nav-search-submit" onclick="search()"><i class="fa fa-search"></i></button>
       </form>
@@ -73,7 +75,7 @@
         <img src="./images/banner/200x300-atom-banner-3.png" alt="">
       </div>
 
-      <section if="presentation">
+      <section id="presentation">
         <h2>Présentation</h2>
         <p>blablabla</p>
       </section>
