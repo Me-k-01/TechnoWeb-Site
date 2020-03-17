@@ -23,7 +23,29 @@ body::-webkit-scrollbar-thumb {
 h1 {
   color: #cc8d51;
 }
-
+h2 {
+  margin-left: 2rem;
+}
+h3 {
+  margin-left: 3rem;
+}
+p {
+  margin-left: 4rem;
+  text-indent: 2rem;
+}
+main ul {
+  margin-left: 5rem;
+}
+main li {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+main ul p {
+  margin-top: 0rem;
+  font-style: normal;
+  margin-left: 0;
+  text-indent: 1rem;
+}
 a {
   color: #d19a66;
   text-decoration: none;

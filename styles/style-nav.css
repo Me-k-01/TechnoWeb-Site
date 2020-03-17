@@ -72,7 +72,7 @@
 #nav-left form {
   display: flex;
   height: 2rem;
-  padding: 5px 5px;
+  padding: 6px 0;
   margin: 70px 5% 20px 5%;
   background-color: #21252b;
   border: 1px solid #282c34;
@@ -88,7 +88,7 @@
   background-color: #21252b;
   height: 100%;
   width: 75%;
-  padding: 0;
+  padding: 5px;
   margin: 0;
   color: #b5b7bc;
   border: none;
@@ -104,7 +104,7 @@
 #nav-left button.submit {
   width: 1.5rem;
   height: 100%;
-  margin-left: 5%;
+  margin: auto;
   color: #b5b7bc;
   cursor: pointer;
   background: none;

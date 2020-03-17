@@ -26,18 +26,18 @@
       </form>
 
       <ul class="primary">
-        <li><a href="./index.html">Accueil</a>
-          <ul  id="display" class="tertiary">
-            <li><a href="#presentation">Présentation</a></li>
+        <li><a class="selected" href="./index.html">Accueil</a>
+          <ul id="display" class="tertiary">
             <li><a href="#problem">Problématique</a></li>
+            <li><a href="#presentation">Présentation</a></li>
           </ul>
         </li>
-        <li><a class="selected" href="./guide/instalation.html">Guide</a>
+        <li><a href="pages/guide/instalation.html">Guide</a>
           <ul class="secondary">
             <li><a href="pages/guide/instalation.html">Instalation</a>
             </li>
             <li>
-              <a class="selected" href="pages/guide/utilisation.html">Utilisation</a>
+              <a href="pages/guide/utilisation.html">Utilisation</a>
               <ul class="tertiary">
                 <li><a href="#general">Général</a></li>
                 <li><a href="#git">Git</a></li>
@@ -75,14 +75,68 @@
         <img src="./images/banner/200x300-atom-banner-3.png" alt="">
       </div>
 
+      <section id="problem">
+        <h2>Problématique</h2>
+        <p>Ce site vise à présenter l'éditeur de texte de GitHub: Atom</p>
+
+      </section>
+
       <section id="presentation">
         <h2>Présentation</h2>
-        <p>blablabla</p>
+        <h3>Qu'est-ce qu'Atom ?</h3>
+        <p>Atom est un logiciel libre d’édition de texte (dit open source).</p>
+        <p>Il est développé par GitHub et a été realisé avec Electron et Chromium,
+          et est ecrit en CoffeeScript.</p>
+        <p>Ce logiciel propose une integration de git,
+          mais egalement l'ajout facile d'extensions pouvant être développées par tous.</p>
+        <p>Écrit en Node.js ces extension appelées "package"
+           permettent d'implementer pas mal de fonctionnalitée au logiciel.</p>
+        <p>Notamment d'executer du script directement depuis l'éditeur,
+          ou de proposé des complements de ce que l'on ecrit suivant le language de programmation...</p>
+
+        <h3>Pourquoi Atom ?</h3>
+        <p>La question qui vient alors à notre esprit est effectivement pourquoi utiliser Atom plutôt qu'un autre environnement de programmation?</p>
+        <p>En effet plusieurs autres alternative vous propose des avantages certains comme
+          Visual Studio Code de Microsoft, Sublime Text ou encore TextMate et j'en passe.</p>
+        <p>Et bien pour faire simple, ces éditeurs confèrent une customisation de l'éditeur toute fois limité.</p>
+
+        <p>On peut aussi citer parmis les avantages directes que propose Atom:</p>
+        <ul>
+          <li>Un éditeur de text sobre:
+            <p>Puisqu'il arrive casi totalement vierge, plus de perte dans les options compliqués des environnements de programmation</p>
+            <p>C'est à vous de le customiser ce qui peux être vu comme un avantage tout comme un inconveniant par certain</p>
+          </li>
+
+          <li>Une large gamme de choix de customisation de l'editeur
+          </li>
+
+          <li>Une communauté active et dévoué:
+            <p>En effet la communauté supportant Atom est très active,
+              elle propose une large gamme d'extension,
+              mais aussi de l'aide avec l'éditeur sur les forums dédiés
+            </p>
+          </li>
+
+          <li>Un control de git intégrée:
+            <p>Il serait bien dommage de parler d'Atom sans mensionner son interface d'intégration de Git très avancé,
+            vous permettant de voir facilement en détail chaque modification que vous avez apporté à vos script, avant de les "pousser" à votre reperctoire.
+            L'interface est sobre mais très efficace, plus besoin de tapper de commande dans la console, ce n'est que l'affaire de quelques cliques!
+            </p>
+          </li>
+        </ul>
+
+        <h3>Un éditeur fait pour vous?</h3>
+        <p>En résumé c'est un éditeur très basique,
+          mais proposant également pas mal de possibilité de customisation.</p>
+        <p>C'est pour quoi je recommanderais cette éditeur à ceux qui veulent pouvoir customiser à leurs guise l'éditeur</p>
+        <p>Et qui non pas peur de passer un peu de temps à choisir qu'elle extensions ils souhaitent ajouter à l'éditeur.</p>
+        <p>Il est interessant pour ceux souhaitant avoir une large paneaupli de choix de modification déjà codé par d'autres enthousiaste de ce logiciel.</p>
+        <p>Il convient au debutant souhaitant faire leurs dans sur leurs dents sur leurs premieres lignes de code
+          sans avoir à appendre comment marche leurs environnement de travail (le logiciel étant extrèmement intuitif)</p>
+        <p>Mais également au programmeur plus confirmé, souhaitant avoir un éditeur capable d'accomplir des taches plus spécifique</p>
+
+
       </section>
-      <nav id="nav-bottom">
-        <a href="#"><i class="fas fa-chevron-left"></i></a>
-        <a href="#"><i class="fas fa-chevron-right"></i></a>
-      </nav>
 
     </main>
 
