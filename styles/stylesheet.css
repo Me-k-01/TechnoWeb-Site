@@ -7,6 +7,7 @@ html, body {
   width: : 100%;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  text-align: justify;
 }
 body {
   /* On le mets uniquement dans body pour ne pas casser l'evennement javascript onScroll.*/

@@ -41,6 +41,9 @@ header li {
   border-bottom: 2px solid #1d2126;
 }
 
+header a:hover {
+  text-decoration: none;
+}
 
 header li a {
   display: block;
@@ -49,7 +52,6 @@ header li a {
   height: 100%;
   font-size: 18px;
   color: #b5b7bc;
-  text-decoration: none;
   border-bottom: 5px solid #282c34;
 }
 header li a:hover{
