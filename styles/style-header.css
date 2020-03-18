@@ -17,8 +17,10 @@ header {
 header h1 {
   font-size: 2.7rem;
   line-height: 2.7rem;
-  margin: 1.2rem 0;
-  padding: 17px 40%;
+  margin: 1.2rem auto;
+  text-align: center;
+  width: 100%;
+  padding: 17px 0;
   background-color: #1d2126;
 }
 
@@ -47,10 +49,12 @@ header li a {
   height: 100%;
   font-size: 18px;
   color: #b5b7bc;
+  text-decoration: none;
   border-bottom: 5px solid #282c34;
 }
 header li a:hover{
   transition-delay: 0.07s;
+  text-decoration: none;
   color: #b5b7bc;
 }
 header li a:active {
@@ -84,6 +88,7 @@ header .selected {
   background-color: #282c34;
   box-shadow: 0 20px 0 #282c34;
   pointer-events: none;
-
+  border-top-left-radius: 20px;
+  border-top-right-radius:  20px;
   border-bottom: none;
 }
