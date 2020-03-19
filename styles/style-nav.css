@@ -84,6 +84,9 @@
 #nav-left form:hover {
   border: 1px solid #737478;
 }
+#nav-left form:active {
+  border: 1px solid #282c34;
+}
 
 #nav-left .search {
   background-color: #21252b;
