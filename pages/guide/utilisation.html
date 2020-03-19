@@ -82,14 +82,58 @@
 
     <main class="content">
       <section id="general">
+        <h2>Utilisation général des fonctionnalité d'atom</h2>
+        <h3>Les projets</h3>
         <p>
-          rtert
+          Vous pouvez ouvrir dans Atom un reperctoire de projet simplement en glissant le fichier sur Atom.
+          Vous pouvez également ouvrir le fichier en allant dans File > Open File et en selectionnant votre fichier pour ce qui aime se compliquer la vie.
+          Atom vous mets également à votre disposition, la possibilité de reouvrir des projet deja ouvert, dans File > Reopen Project.
+        </p>
+
+        <h3>Les thèmes</h3>
+        <p>Vous pouvez changer de themes en allant dans la rubrique thème des parametres.
+          Vous y trouverez quelque themes preinstaller, mais s'il ne sont pas a votre gout,
+          vous pouvez toujours en télécharger de puis l'interface juste en bas
+          De la meme maniere que pour les packages.
         </p>
       </section>
 
       <section id="git">
-        <p>erzerzer</p>
+        <h2>L'intégration Git et GitHub</h2>
+        <p>Atom étant creer par GitHub, proposose de gerer lui même les modification apportées à votre projet.</p>
+        <p>Vous n'avez plus besoin d'ouvrir le terminal de commande pour tapper Les fameux "git push" et "git commit",
+          l'integration git prends en charge tous ceci.
+        </p>
+        <p>Pour se faire, il faudra d'abord vous connecter une premiere fois avec votre compte GitHub sur Atom
+          (si vous n'avez pas de compte, vous pouvez en creer un sur <a href="https://github.com/">https://github.com/</a>)
+          Puis une fois que cela est realisé, vous pourrez utiliser pleinement l'intégration Git dans vos prochain projet.
+        </p>
+        <p>Lors que vous avez ouvert dans atom le reperctoire d'un de vos projet hebergé sur GitHub
+          (que vous pouvez telecharger en ouvrant un terminal dans le fichier dans lequel vous souhaiter installer le projet,
+          et en tappant "git clone https://github.com/VotrePseudo/VotreProjet")
+          vous pouvez ouvrir la fenetre Git, en appuyant sur le button eponnyme, en bas a droite de l'ecran.
+        </p>
+        <p>
+          Une fois ouvert, cette intégration vous donnera la possibilité de visualiser et d'ajouter tout changement directe du projet sur le Repository ("suppression de doc...")
+          Lorsque vous êtes content de votre travail, vous pouvez appuyer sur "Stage All" qui va commit tout les changement.
+          (vous pourriez les stages un pars un manuelement, mais cela deviendrais vite redondant). C'est changemant son bien entendu encore annulable à se stade-ci.
+        </p>
+        <p>
+          Le bouton "Commit to master" vous permettra d'effectuer ces modifications sur la branche principales de votre projet (soit la branche master normalement).
+          Comme vous l'avez bien deviner, vous pourrez separer votre projet en plusieur branche pour corriger de votre côté certain bug, sans affecter la branche principale de votre application,
+          fusionner cette branche à la brancher principale.
+          Cette fonctionnalité est très pratique lorsque l'on travail à plusieur sur un seul et même projet.
+        </p>
+        <p>
+          Une fois que vous être près à valider vos changement, après avoir appuyer sur "Commit to master",
+          vous pouvez appuyer sur "push" en bas a droite, qui va effectuer les changements sur le dépot GitHub.
+        </p>
+        <p>
+          Vous pouvez egalement fetch au meme endroit s'il y a eut des modifications sur votre dépot
+        </p>
+
       </section>
+
 
       <nav id="nav-bottom">
         <a href="installation.html"><i class="fas fa-chevron-left"></i></a>
