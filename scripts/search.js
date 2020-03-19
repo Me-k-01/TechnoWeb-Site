@@ -18,6 +18,7 @@ function addParentToProtection(li, protectedList) {
   // un element de la liste des protégés
   if (! protectedList.includes(liToProtect)) {
     protectedList.push(liToProtect);
+    
   }
 }
 
