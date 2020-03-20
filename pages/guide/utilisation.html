@@ -83,106 +83,126 @@
 
     <main class="content">
       <section id="general">
-        <h2>Utilisation général des fonctionnalité d'atom</h2>
+        <h2>Utilisation général des fonctionnalitées d'Atom</h2>
         <h3>Les projets</h3>
         <p>
-          Vous pouvez ouvrir dans Atom un repertoire de projet simplement en glissant le fichier sur Atom.
-          Vous pouvez également ouvrir le fichier en allant dans File > Open File et en selectionnant votre fichier pour ce qui aime se compliquer la vie.
-          Atom vous mets également à votre disposition, la possibilité de reouvrir des projet deja ouvert, dans File > Reopen Project.
+          Vous pouvez ouvrir dans Atom un dossier de projet simplement en glissant le dossier dans Atom.
+          Vous pouvez également ouvrir le fichier en allant dans File > Open File et en sélectionnant votre fichier pour ceux qui aiment se compliquer la vie.
+          Atom met également à votre disposition, la possibilité de rouvrir des projets qui ont déjà été ouverts précédemment,
+          dans File > Reopen Project.
         </p>
 
         <h3>Raccourcis</h3>
-        <p>Ceci est une petite liste non-exhaustive de tout les raccourcis de base qui pourrait
-          vous servir pour naviguer plus rapidement dans l'éditeur.
+        <p>Lorsque l'on se met à se servir sérieusement d'un logiciel,
+          il est toujours bon de connaitre quelques-uns de ses raccourcis fonctionnels
+          pour améliorer sa productivité. C'est pourquoi dans cette section, nous traiterons quelques raccourcis de base qui pourrait
+          vous servir pour être plus efficace dans l'éditeur.
         </p>
         <ul>
           <li>Sauvegarder: <strong>"Ctrl" + "s"</strong>
-            <p>Pour sauvegarder le fichier</p>
+            <p>Pour sauvegarder le fichier.</p>
           </li>
 
           <li>Rechercher: <strong>"Ctrl" + "f"</strong>
             <p>Pour rechercher un mot / une phrase dans le fichier courant.</p>
           </li>
 
-          <li>La palette de commande: <strong>"Ctrl" + "Shift" + "p"</strong>
-            <p>Elle permet de trouver n'importe quelle fonctionnalités presentent dans Atom,
-              même ceux de package que vous avez installées.</p>
+          <li id="palette-commande">La palette de commande: <strong>"Ctrl" + "Shift" + "p"</strong>
+            <p>Pour trouver n'importe quelle fonctionnalité présente dans Atom, même ceux de package que vous avez installé.</p>
           </li>
-          <li>Fuzzy file finder: <strong>"Ctrl" + "t"</strong>
-            <p>Pour rechercher rapidement un fichier dans le/les repertoire(s) ouverts.</p>
+          <li>Fuzzy File Finder: <strong>"Ctrl" + "t"</strong>
+            <p>Pour rechercher rapidement un fichier dans le/les dossier(s) ouverts.</p>
           </li>
 
           <li>Mettre en commentaire: "Ctrl"+"/"(celui du pavé numérique)
-            <p>Permet de mettre ou de retirer en commentaire la ligne ou la selection.</p>
+            <p>Permet de mettre ou de retirer en commentaire la ligne ou toute la sélection.</p>
           </li>
 
           <li>Dupliquer:  <strong>"Ctrl" + "Shift" + "d"</strong>
-            <p>Permet de dupliquer la ligne/selection.</p>
+            <p>Permet de dupliquer la ligne/sélection.</p>
           </li>
 
           <li>Les curseurs multiple: <strong>"Ctrl" + Clique Gauche</strong>
             <p>Pour ajouter un nouveau curseur dans l'éditeur.
-              Tous les curseur entrerons les saisies clavier en même temps.</p>
+              Tous les curseurs entreront les saisies claviers en même temps.</p>
           </li>
           <li>Nouvelle onglets: <strong>"Ctrl" + "n"</strong>
-            <p>Pour ouvrir un nouveau fichier dans un nouvelle onglet</p>
+            <p>Pour ouvrir un nouveau fichier dans un nouvel onglet</p>
           </li>
 
           <li>Nouvelle fenetre: <strong>"Ctrl" + "Shift" + "n"</strong>
-            <p>Ouvrir une nouvelle fenetre vierge
+            <p>Ouvrir une nouvelle fenêtre vierge
             </p>
           </li>
 
         </ul>
-        <p>Vous pouvez bien entendu modifier le raccourci clavier à tout moment:
-          D'abord allez dans la rubrique "Shortcut" des parametres, puis cliquer sur l'icone de bloque note pour copier le code.
+        <p>Vous pouvez bien entendu modifier les raccourcis claviers à tout moment:
+          D'abord allez dans la rubrique "Shortcut" des paramètres, puis cliquer sur l'icône de bloque note, pour copier le code.
           Une cela fait, il ne vous suffira plus que de cliquer sur "your keymap file".
-          Une fois la fenetre ouverte vous pouvez coller ce que vous avez copier,
-          et modifier a votre guise la combinaison de touches.
+          Une fois la fenêtre ouverte vous pouvez coller ce que vous avez copié,
+          et modifier à votre guise la combinaison de touches demander pour accéder à cette fonction.
         </p>
 
         <h3>Les thèmes</h3>
-        <p>Vous pouvez changer de thèmes en allant dans la rubrique thème des parametres.
-          Vous y trouverez quelque themes preinstaller, mais s'il ne sont pas a votre gout,
-          vous pouvez toujours en télécharger de puis l'interface juste en bas
-          De la même manière que pour les packages.
+        <p>Vous pouvez changer de thèmes en allant dans la rubrique thème des paramètres.
+          Vous y trouverez quelques thèmes préinstallés. Mais s'ils ne sont pas à votre goût,
+          vous pouvez toujours en télécharger depuis l'interface d'installation juste en bas.
         </p>
-        <p>Vous pouvez aussi personnaliser le look de votre editeur vous même en cliquant sur "your stylesheet".
+        <p>Vous pouvez aussi personnaliser le look de votre éditeur vous-même en cliquant sur "your stylesheet".
         Le language est similaire au Css. <a href="https://flight-manual.atom.io/using-atom/sections/basic-customization/">plus d'information</a> </p>
       </section>
 
       <section id="git">
         <h2>L'intégration Git et GitHub</h2>
-        <p>Atom étant creer par GitHub, proposose de gerer lui même les modification apportées à votre projet.</p>
-        <p>Vous n'avez plus besoin d'ouvrir le terminal de commande pour tapper Les fameux "git push" et "git commit",
-          l'integration git prends en charge tous ceci.
+        <p>Atom étant créé par GitHub, il propose de gérer lui-même les modifications apportées à votre projet.
+          Vous n'avez en effet plus besoin d'ouvrir le terminal de commande pour tapper les fameux "git push" et "git commit",
+          l'intégration Git prend en charge tout ceci.
         </p>
-        <p>Pour se faire, il faudra d'abord vous connecter une premiere fois avec votre compte GitHub sur Atom
-          (si vous n'avez pas de compte, vous pouvez en creer un sur <a href="https://github.com/">https://github.com/</a>)
-          Puis une fois que cela est realisé, vous pourrez utiliser pleinement l'intégration Git dans vos prochain projet.
+        <p>Pour ce faire, il faudra d'abord vous connecter une première fois avec votre compte GitHub sur Atom
+          (si vous n'avez pas de compte, vous pouvez en créer un sur <a href="https://github.com/">https://github.com/</a>),
+          puis une fois que cela est réalisé, vous pourrez utiliser pleinement l'intégration Git dans vos prochains projets.
         </p>
-        <p>Lors que vous avez ouvert dans atom le repertoire d'un de vos projet hebergé sur GitHub
-          (que vous pouvez telecharger en ouvrant un terminal dans le fichier dans lequel vous souhaiter installer le projet,
-          et en tappant "git clone https://github.com/VotrePseudo/VotreProjet")
-          vous pouvez ouvrir la fenetre Git, en appuyant sur le button eponnyme, en bas a droite de l'ecran.
+
+        <p>Avant de pouvoir utiliser pleinement cette intégration,
+          vous aurez surement compris qu'il faut d'abord ouvrir le projet dans atom.
+          Pour cela, rien de plus simple, il vous suffit d'ouvrir le menu git clone
+          (accessible en ouvrant la <a href="#palette-commande">palette de commande</a> et en tapant "git clone").
+          Une fois dans le menu de git clone, il vous faut entrer le lien de du dépôt GitHub du projet (ex: <a href="#">https://github.com/VotrePseudo/VotreProjet</a>),
+          vous pouvez aussi lui préciser l'endroit sur lequel vous voulez qu'il enregistre le projet.
+          Par défaut, il le mettra dans un fichier "github" qu'il créera pour vous, dans votre répertoire personnel.
         </p>
-        <p>
-          Une fois ouvert, cette intégration vous donnera la possibilité de visualiser et d'ajouter tout changement directe du projet sur le Repository ("suppression de doc...")
-          Lorsque vous êtes content de votre travail, vous pouvez appuyer sur "Stage All" qui va commit tout les changement.
-          (vous pourriez les stages un pars un manuelement, mais cela deviendrais vite redondant). C'est changemant son bien entendu encore annulable à se stade-ci.
-        </p>
-        <p>
-          Le bouton "Commit to master" vous permettra d'effectuer ces modifications sur la branche principales de votre projet (soit la branche master normalement).
-          Comme vous l'avez bien deviner, vous pourrez separer votre projet en plusieur branche pour corriger de votre côté certain bug, sans affecter la branche principale de votre application,
-          fusionner cette branche à la brancher principale.
-          Cette fonctionnalité est très pratique lorsque l'on travail à plusieur sur un seul et même projet.
+
+        <p>Lorsque vous avez ouvert dans Atom le répertoire d'un de vos projets,
+          vous pouvez ouvrir la fenêtre Git en appuyant sur le button éponyme, en bas à droite de l'éditeur.
         </p>
         <p>
-          Une fois que vous être près à valider vos changement, après avoir appuyer sur "Commit to master",
-          vous pouvez appuyer sur "push" en bas a droite, qui va effectuer les changements sur le dépot GitHub.
+          Une fois ouvert, cette intégration vous donnera la possibilité de visualiser et d'ajouter
+          tout changement direct du projet sur le projet (suppression de doc...).
+          Lorsque vous êtes content de votre travail,
+          vous pouvez appuyer sur "Stage All" qui va "commit" tous les changements.
+          (vous pourriez les validés un à un manuellement, mais cela deviendrait vite redondant).
+          Ces changements sont bien entendus encore réversibles à ce stade-ci (ouf).
         </p>
         <p>
-          Vous pouvez également "fetch" au même endroit que "push", pour synchroniser votre projet au dépot GitHub, si jamais il y a eut des modifications.
+          Le bouton "Commit to master" vous permettra d'effectuer ces modifications sur la branche principale de votre projet (soit la branche master normalement).
+          Ce qui signifie effectivement, (pour les plus perspicaces d'entre vous) que l'on peut séparer un dépôt en plusieurs branches.
+          Et même fusionner des branches entre elles.
+
+        </p>
+        <h3>Pourquoi me diriez-vous?</h3>
+        <p>
+          Et bien cela prend sens pour les personnes travaillant sur de gros projets, comme pour certaines applications.
+          De cette manière un développeur peut corriger de son côté un certain bug, sans affecter toute la branche principale
+          qui pourrait servir de distribution pour cette application hypothétique.
+          Cette fonctionnalité peut aussi s'avérer très pratique lorsque l'on travaille en groupe sur le même projet.
+        </p>
+        <h3>--------------------------------------------------------</h3>
+        <p>
+          Une fois que vous êtes prêt à valider vos changements, donc après avoir appuyé sur "Commit to master",
+          vous pouvez cliquer sur "push" en bas à droite, qui va effectuer les changements sur le dépôt GitHub.
+        </p>
+        <p>
+          Vous pouvez également "fetch", toujours au même endroit que "push", pour synchroniser votre projet au dépôt GitHub, si jamais il y a eu des modifications.
         </p>
 
       </section>
