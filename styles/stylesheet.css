@@ -60,10 +60,13 @@ aside {
   background-color: #0d4545;
   margin: 0 50px;
   padding: 0.1rem 0;
-
+  border-radius: 10px;
 }
 footer {
-  margin-top: 10%;
+    background-color: #4b390f;
+    margin: 10% 50px;
+    padding: 0.1rem 0;
+    border-radius: 10px;
 }
 
 a {
