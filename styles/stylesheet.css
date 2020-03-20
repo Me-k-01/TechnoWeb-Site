@@ -56,12 +56,6 @@ main ul p {
   margin-left: 0;
   text-indent: 1rem;
 }
-aside {
-  background-color: #0d4545;
-  margin: 0 50px;
-  padding: 0.1rem 0;
-  border-radius: 10px;
-}
 footer {
     background-color: #4b390f;
     margin: 10% 50px;
@@ -110,4 +104,14 @@ main {
   main {
     margin-right: 0;
   }
+}
+
+aside {
+  background-color: #0d4545;
+  margin: 0 50px;
+  padding: 0.1rem 0;
+  border-radius: 10px;
+}
+aside a {
+  color: #d1d3d7;
 }
