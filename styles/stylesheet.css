@@ -56,7 +56,12 @@ main ul p {
   margin-left: 0;
   text-indent: 1rem;
 }
+aside {
+  background-color: #0d4545;
+  margin: 0 50px;
+  padding: 0.1rem 0;
 
+}
 footer {
   margin-top: 10%;
 }
