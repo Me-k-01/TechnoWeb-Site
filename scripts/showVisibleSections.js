@@ -3,7 +3,7 @@ function isVisible(el) {
   // Test de si un element est visible a l'ecran
   var rect = el.getBoundingClientRect();
   // On test si le dessus du rect est dans la fenetre, sur l'axe y uniquement donc.
-  return (rect.top+1 >= 0);
+  return (rect.bottom-10 >= 0);
 }
 
 function getLinkFromAnchor(anchor, links) {
